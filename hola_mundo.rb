@@ -1,7 +1,5 @@
-def suma (a, b)
-  return a + b
-  end
+def saluda (nombre)
+  puts "Hola " + nombre
+end
 
-  var1 = suma(245,923)
-  puts var1
-  gets()
+saluda("Pedro")
