@@ -1,5 +1,5 @@
-def saluda (nombre)
-  puts "Hola " + nombre
+def longitud (palabra)
+   palabra.length
 end
 
-saluda("Pedro")
+longitud ("hola")
