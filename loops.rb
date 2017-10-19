@@ -1,7 +1,11 @@
-print "Ingresa una palabra"
-word = gets.chomp
+# 10.times {|i| puts "#{i+1} - Oliva"}
 
 
-puts"ingresaste algo diferente de salir" while word != "salir"
+# 10.times do |i|
+#   puts "#{i+1} - Oliva"
+# end
 
-puts "escribiste salir" until word == "salir"
+
+(20..30).each do |i|
+  puts "#{i}hola mundo"
+end
