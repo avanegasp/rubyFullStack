@@ -141,3 +141,80 @@
 # p alive?("ikk", 20) #=> false
 # p alive?("gut", 5) #=> false
 # p alive?("trek", 50) #=> false
+
+
+# def fizz_buzz(num)
+#   if num % 5 == 0 && num % 3 == 0
+#     "fizzbuzz"
+#   elsif num % 5 == 0
+#       "fizz"
+#     elsif num % 3 == 0
+#         "buzz"
+#       else
+#         num
+#   end
+# end
+#
+# p fizz_buzz(68)
+#
+# def fizz_buzz (num)
+# (num % 3 == 0) && (num % 5 == 0) ? "fizzbuzz" : num % 3 == 0 ? "fizz" : num % 5 == 0 ? "buzz" : num
+# end
+
+# def create_hash(temperature, altitude, pressure)
+#     {temperature: temperature}
+#     {altitude: altitude}
+#     {pressure: pressure}
+# end
+# p create_hash(23, 4500, 234)
+
+# def create_hash(temperature, altitude, pressure)
+# create_hash = {temperature: 22, altitude:33, pressure:55}
+#     create_hash.each do |key, value|
+#       p "#{key}:#{value}"
+# end
+# end
+# p create_hash(22,55,66)
+
+
+
+# def minimo(array_min)
+#   min = array_min.min
+# end
+# def maximo(array_max)
+#   max = array_max.max
+# end
+#
+# p maximo(2,5,6,7,9)
+# p minimo(2,5,6,7,9)
+
+
+# def table_for(collection, *args)
+#   "Got #{collection} and #{args.join(', ')}"
+# end
+#
+# p table_for("one")
+# p table_for("one", "two")
+# p table_for "one", "two", "three"
+# p table_for("one", "two", "three")
+# p table_for("one", ["two", "three"])
+
+# 
+# def create_hash(temperature, altitude, pressure)
+#
+#       hash_new = {temperature:temperature,
+#       altitude:altitude,
+#       pressure:pressure}
+#
+#       return hash_new
+# end
+#
+# p create_hash(22,44,55)
+
+
+# create_hash = {temperature: 22, altitude:33, pressure:55}
+#     create_hash={}
+#
+#    create_hash.each do |key, value|
+#      return creste_hash= "#{key}:#{value}"
+# end
