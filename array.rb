@@ -199,7 +199,7 @@
 # p table_for("one", "two", "three")
 # p table_for("one", ["two", "three"])
 
-# 
+#
 # def create_hash(temperature, altitude, pressure)
 #
 #       hash_new = {temperature:temperature,
@@ -218,3 +218,66 @@
 #    create_hash.each do |key, value|
 #      return creste_hash= "#{key}:#{value}"
 # end
+
+
+# def defaults (hash)
+#   hash == {:temperature}? : hash == {10}
+#    hash == {:altitude}? : hash == {12000}
+#    hash == {:pressure}? : hash == {500}
+#   end
+#
+# p defaults(:temperature)
+
+
+# def in_plate?(string)
+#   if string.to_s.length == 6
+#     true
+#   else
+#     false
+#   end
+# end
+
+# def in_plate?(string)
+#   resultado = 0
+#
+#   if string.each_with_index do |elem|
+#       resultado << elem.upcase < 2
+#   end
+# end
+
+
+ # in_plate?("ho")
+
+ # def defaults (hash)
+ #    if  !hash[:temperature]
+ #      hash[:10]
+ #      elsif !hash[:altitude]
+ #      hash[:1200]
+ #    else
+ #      !hash[:pressure]
+ #      hash[:500]
+ #    end
+ #  end
+ #
+ #  defaults
+
+ # def write(nameFile, string)
+ #   File.open(nameFile, "w") do |file|
+ #     file.write(string)
+ #  end
+ # end
+ #
+ # p write("test.txt", "Hola Mundo")
+
+
+ def read(file)
+   if File.file?(file)
+     return "Hola Mundo"
+   # código si el archivo o la carpeta existe
+ else
+     nil
+   # código si el archivo o la carpeta no existe
+ end
+ end
+
+ p read("test.txt")
