@@ -63,7 +63,7 @@
 #       reducir = cadena.size - num
 #     end
 # end
-# adjust_text("hola", 8)
+# p adjust_text("hola", 8)
 
 # def multiplier (array, num)
 #   resultado = []
@@ -269,15 +269,68 @@
  #
  # p write("test.txt", "Hola Mundo")
 
+ #
+ # def read(file)
+ #   if File.read(file)
+ #       return File.write(file,"faltaba escribir para este archivo")
+ #   else
+ #       return nil
+ #   end
+ # end
+ #
+ # p read("super.txt")
 
- def read(file)
-   if File.file?(file)
-     return "Hola Mundo"
-   # código si el archivo o la carpeta existe
- else
-     nil
-   # código si el archivo o la carpeta no existe
- end
- end
+# def read(file)
+#  content = File.read(file) # lee el archivo
+#  lines = content.split("\n") # divide el contenido en líneas
+#
+#  # recorre las líneas y las imprime
+#  lines.each do |line|
+#    puts line
+#  end
 
- p read("test.txt")
+class Car
+  attr_accessor = :accelerate, :brake
+  attr_reader = :velocity
+
+  def initialize(accelerate, velocity, brake)
+    @accelerate = accelerate
+    @velocity = velocity
+    @brake = brake
+  end
+
+  def accelerate
+  "yo tengo una aceleracion de #{@accelerate}"
+  end
+
+  def velocity
+  "yo tengo una velocidad de #{@velocity}"
+  end
+
+  def brake
+    "yo tengo una aceleracion de #{@brake}"
+  end
+
+end
+
+p vehiculo = Car.new(5,6,7)
+# vehiculo.accelerate = 433
+# vehiculo.velocity = 34234
+# vehiculo.brake = 243243
+# #
+# p vehiculo.accelerate
+# p vehiculo.velocity
+# p vehiculo.brake
+
+# juan = Humano.new("Juan Perez", 12, "M")
+#
+# juan = Humano.new
+# juan.name = "Juan Perez"
+# juan.age = 12
+# juan.genre = "M"
+#
+# puts juan.name # imprime Juan Perez
+# puts juan.age # imprime 12
+# puts juan.genre # imprime M
+#
+# puts juan.greet # imprime Hola, me llamo Juan Perez
