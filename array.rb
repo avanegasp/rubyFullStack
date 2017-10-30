@@ -288,39 +288,66 @@
 #  lines.each do |line|
 #    puts line
 #  end
+#
+# class Car
+#   attr_accessor = :accelerate, :brake
+#   attr_reader = :velocity
 
-class Car
-  attr_accessor = :accelerate, :brake
-  attr_reader = :velocity
+  # def velocity(velocity)  #writter
+  #   @velocity = velocity
+  # end
 
-  def initialize(accelerate, velocity, brake)
-    @accelerate = accelerate
-    @velocity = velocity
-    @brake = brake
-  end
+  # def velocity #reader
+  #   @velocity
+  # end
+#
+#   def initialize
+#     @velocity = 0
+#   end
+#
+#   def accelerate(num=1)
+#    @velocity +=  num
+#   end
+#
+#   def brake(num=1)
+#     @velocity -= num
+#   end
+# end
+#
+# p car = Car.new
+# p car.velocity # => 0 #reader
+# p car.velocity = 34 #writter
+#
+# p car.accelerate
+# p car.velocity # => 1
+#
+# p car.brake
+# p car.velocity # => 2
+#
+# p car.accelerate(2)
+# p car.velocity # => 3
 
-  def accelerate
-  "yo tengo una aceleracion de #{@accelerate}"
-  end
+# car.brake(2)
+# car.velocity # => 0
+# # p car.accelerate(2)
+# p car.velocity # => 3
 
-  def velocity
-  "yo tengo una velocidad de #{@velocity}"
-  end
+# p car.brake(2)
+# p car.velocity # => 0
 
-  def brake
-    "yo tengo una aceleracion de #{@brake}"
-  end
-
-end
-
-p vehiculo = Car.new(5,6,7)
-# vehiculo.accelerate = 433
-# vehiculo.velocity = 34234
-# vehiculo.brake = 243243
-# #
-# p vehiculo.accelerate
-# p vehiculo.velocity
-# p vehiculo.brake
+# class Car
+#   attr_accessor = :accelerate, :brake
+#   attr_reader = :velocity
+# end
+#
+# class Bus < Car
+# end
+#
+#
+# # #
+# p car.accelerate
+# p car.velocity
+# p car.brake
 
 # juan = Humano.new("Juan Perez", 12, "M")
 #
@@ -334,3 +361,62 @@ p vehiculo = Car.new(5,6,7)
 # puts juan.genre # imprime M
 #
 # puts juan.greet # imprime Hola, me llamo Juan Perez
+
+
+# def my_function(h = {})
+#   h[:c] ||= 500
+#   # Use h[:a], h[:b], h[:c]
+#   h[:b] ||= 200
+# end
+#
+# p my_function(b: 100)
+
+#
+# class Car
+#   attr_accessor = :accelerate, :brake
+#   attr_reader = :velocity
+
+  # def velocity(velocity)  #writter
+  #   @velocity = velocity
+  # end
+
+  # def velocity #reader
+  #   @velocity
+  # end
+
+#   def initialize
+#     @velocity = 0
+#   end
+#
+#   def accelerate(num=1)
+#    @velocity +=  num
+#   end
+#
+#   def brake(num=1)
+#     @velocity -= num
+#   end
+# end
+#
+# class Bus < Car
+#
+# end
+
+
+def is_plate?(string)
+ expreg = /^[A-Z]{3}\d\d\d$/
+
+  if expreg.match(string)
+   true
+ else
+  false
+end
+end
+
+p is_plate?("ATS444")
+
+
+
+# p placa = /^[A-Z]{3}\d\d\d$/.match("TTT546");
+#
+#
+# p m = /s(tc)?s?t{2}$/.match("stostt")
