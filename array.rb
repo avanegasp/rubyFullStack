@@ -402,17 +402,17 @@
 # end
 
 
-def is_plate?(string)
- expreg = /^[A-Z]{3}\d\d\d$/
-
-  if expreg.match(string)
-   true
- else
-  false
-end
-end
-
-p is_plate?("ATS444")
+# def is_plate?(string)
+#  expreg = /^[A-Z]{3}\d\d\d$/
+#
+#   if expreg.match(string)
+#    true
+#  else
+#   false
+# end
+# end
+#
+# p is_plate?("ATS444")
 
 
 
